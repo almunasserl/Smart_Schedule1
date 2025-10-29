@@ -18,7 +18,6 @@ const aiRoutes = require("./routes/aiRoutes");
 const scheduleRoutes = require("./routes/scheduleRoutes");
 const irregularRoutes=require("./routes/irregularRoutes")
 const app = express();
-const cors = require("cors");
 
 app.use(
   cors({
