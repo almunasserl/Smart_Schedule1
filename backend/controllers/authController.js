@@ -1,7 +1,7 @@
 const sql = require("../config/db");
 const generateAuthRecord = require("../middlewares/generateAuthRecord");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const speakeasy = require("speakeasy");
 const sendEmail = require("../middlewares/emailMiddleware");
 
