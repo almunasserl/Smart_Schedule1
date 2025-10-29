@@ -18,15 +18,17 @@ const aiRoutes = require("./routes/aiRoutes");
 const scheduleRoutes = require("./routes/scheduleRoutes");
 const irregularRoutes=require("./routes/irregularRoutes")
 const app = express();
-import cors from "cors";
+const cors = require("cors");
 
-app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://smart-schedule1.vercel.app"
-  ],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://smart-schedule1.vercel.app"
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.use("/api/faculty", facultyRoutes);
